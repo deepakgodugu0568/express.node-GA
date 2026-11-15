@@ -56,6 +56,35 @@ router.post("/", (req, res) => {
 });
 
 
+
+// DELETE loan by ID
+router.delete("/:id", (req, res) => {
+    const { id } = req.params;
+
+    db.run(
+        "DELETE FROM loans WHERE id = ?",
+        [id],
+        function (err) {
+            if (err) {
+                return res.status(500).json({
+                    error: err.message
+                });
+            }
+
+            if (this.changes === 0) {
+                return res.status(404).json({
+                    message: "Loan not found"
+                });
+            }
+
+            res.status(200).json({
+                message: "Loan deleted successfully",
+                loan_id: id
+            });
+        }
+    );
+});
+
 // JOIN loans with maker and tool names
 router.get("/details", (req, res) => {
 
