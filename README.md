@@ -343,6 +343,8 @@ The database acts as the central storage system for the complete application. Al
 ### A. Database Connection and Initialization
 
 Created the `database/db.js` file to establish the SQLite database connection.
+![db.js](https://github.com/deepakgodugu0568/express.node-GA/blob/ad8b689be9d7f64815af2fe3f0e7651e93fff35e/screenshorts/db.js.png)
+![seed.js](https://github.com/deepakgodugu0568/express.node-GA/blob/ad8b689be9d7f64815af2fe3f0e7651e93fff35e/screenshorts/seed.js.png)
 
 Implemented the database initialization logic to create the required tables.
 
@@ -459,6 +461,7 @@ Implemented endpoints to:
 ### B. GET Operation
 
 Implemented the GET endpoint to retrieve maker information from the database.
+![get all makers](https://github.com/deepakgodugu0568/express.node-GA/blob/ad8b689be9d7f64815af2fe3f0e7651e93fff35e/screenshorts/getting%20all%20amkers.png)
 
 
 The endpoint allows users and other application modules to access the registered maker records.
@@ -466,6 +469,7 @@ The endpoint allows users and other application modules to access the registered
 ### C. POST Operation
 
 Implemented the POST endpoint to register new makers.
+![adding new makers](https://github.com/deepakgodugu0568/express.node-GA/blob/ad8b689be9d7f64815af2fe3f0e7651e93fff35e/screenshorts/crreating%20new%20makers.png)
 
 The API accepts maker details and inserts the information into the makers table.
 
