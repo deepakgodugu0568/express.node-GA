@@ -460,6 +460,7 @@ Implemented endpoints to:
 
 Implemented the GET endpoint to retrieve maker information from the database.
 
+
 The endpoint allows users and other application modules to access the registered maker records.
 
 ### C. POST Operation
@@ -498,11 +499,11 @@ Successfully developed the makers management module, allowing the application to
 
 | Field | Details |
 |---|---|
-| Student Name | [Enter Full Name] |
-| Roll Number / Registration Number | [Enter Roll Number] |
-| College Name | [Enter College Name] |
-| Branch | [Enter Branch] |
-| Academic Year | [Enter Academic Year] |
+| Student Name | dumpeti dinesh sesha sai |
+| Roll Number / Registration Number | 252U1R6063 |
+| College Name | aurora deemed university |
+| Branch | AIML-2B |
+| Academic Year | 2026-2027 |
 | Team Member Number | 3 |
 | Assigned Module | Tools Management API |
 
@@ -527,10 +528,12 @@ Developed the REST API routes for managing tool information.
 ### B. GET Operation
 
 Implemented the GET endpoint to retrieve all available tool records from the database.
+![getting all tools](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/all%20tools%20information.png)
 
 ### C. POST Operation
 
 Implemented the POST endpoint to add new tools.
+![adding new tool information](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/adding%20new%20tool.png)
 
 The API accepts details such as:
 - Tool name.
@@ -541,14 +544,18 @@ The received information is stored in the tools table.
 ### D. PUT Operation
 
 Implemented the PUT endpoint to update the information of an existing tool using its unique ID.
+![updating the tool ](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/updating%20the%20tool.png)
+
 
 ### E. DELETE Operation
 
 Implemented the DELETE endpoint to remove a tool record using its ID.
+![deleting the tool ](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/deleting%20the%20tool.png)
 
 ### F. Search by Tool Kind
 
 Implemented the functionality to filter tools based on their category or kind.
+![search by query](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/query%20parameter%20for%20tool.png)
 
 Example:
 
@@ -588,11 +595,11 @@ Successfully developed the tools management module with CRUD functionality, cate
 
 | Field | Details |
 |---|---|
-| Student Name | [Enter Full Name] |
-| Roll Number / Registration Number | [Enter Roll Number] |
-| College Name | [Enter College Name] |
-| Branch | [Enter Branch] |
-| Academic Year | [Enter Academic Year] |
+| Student Name | jaya varshini janga |
+| Roll Number / Registration Number | 252U1R6099 |
+| College Name | aurora deemed university |
+| Branch | AIML-2B |
+| Academic Year | 2026-2027 |
 | Team Member Number | 4 |
 | Assigned Module | Loans Management API |
 
@@ -617,6 +624,8 @@ Developed the API routes responsible for retrieving and managing loan-related in
 ### B. Loan Information Retrieval
 
 Implemented the GET endpoint to retrieve loan records stored in the loans table.
+![getting all loans](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/getting%20all%20loans.png)
+
 
 ### C. Maker and Tool Relationships
 
@@ -641,6 +650,7 @@ Developed the following endpoint:
 ```text
 GET /loans/details
 ```
+![getting all loans details](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/getting%20loans%20details%20too.png)
 
 This endpoint provides detailed loan information by combining records from the makers, tools, and loans tables.
 
@@ -671,11 +681,11 @@ Successfully developed the loans management module and implemented JOIN operatio
 
 | Field | Details |
 |---|---|
-| Student Name | [Enter Full Name] |
-| Roll Number / Registration Number | [Enter Roll Number] |
-| College Name | [Enter College Name] |
-| Branch | [Enter Branch] |
-| Academic Year | [Enter Academic Year] |
+| Student Name | deepak godugu |
+| Roll Number / Registration Number | 252U1R6079 |
+| College Name | aurora deemed university |
+| Branch | AIML-2B |
+| Academic Year | 2026-2027 |
 | Team Member Number | 5 |
 | Assigned Module | Audit Management and Project Integration |
 
@@ -708,6 +718,7 @@ Implemented the GET endpoint:
 ```text
 GET /audit
 ```
+![audit details](https://github.com/deepakgodugu0568/express.node-GA/blob/88846ca04e8f421a8a334d7e61d85c66c9d5f90c/screenshorts/getting%20audit%20for%20past%20actions.png)
 
 The endpoint retrieves the latest 10 audit records.
 
@@ -792,7 +803,7 @@ Each member was assigned a separate module, and the individual modules were inte
 
 | Member | Assigned Responsibility | Main Files |
 |---|---|---|
-| Member 1 – Deepak Godugu | Database Design and Seed Data | `database/db.js`, `seed.js` |
+| Member 1 | | Database Design and Seed Data | `database/db.js`, `seed.js` |
 | Member 2 | Makers Management API | `routes/makers.js` |
 | Member 3 | Tools Management API | `routes/tools.js` |
 | Member 4 | Loans Management API | `routes/loans.js` |
